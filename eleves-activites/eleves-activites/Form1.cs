@@ -22,13 +22,21 @@ namespace eleves_activites
         {
             //importe les fonctions
             ReadFile readfile = new ReadFile();
+            Card card = new Card();
 
             //get all val from the other class
             string valeursCSV = readfile.ReadCSV();
 
             //affiche sur la Tbox les valeurs
             TxtBTes.Text += valeursCSV;
-           
+
+            foreach(var line in File.ReadAllLines(valeursCSV))
+            {
+                var values = line.Split(';');
+
+                card.
+            }
+ 
         }
     }
 }

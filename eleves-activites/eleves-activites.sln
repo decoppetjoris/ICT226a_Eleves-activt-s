@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "eleves-activites", "eleves-activites\eleves-activites.csproj", "{E2FA845D-0F3F-4FCA-A2AA-06664FA54EB7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetTestEleve", "ProjetTestEleve\ProjetTestEleve.csproj", "{F6507C80-4D41-41F8-AF40-6644A1E99627}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E2FA845D-0F3F-4FCA-A2AA-06664FA54EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E2FA845D-0F3F-4FCA-A2AA-06664FA54EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E2FA845D-0F3F-4FCA-A2AA-06664FA54EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6507C80-4D41-41F8-AF40-6644A1E99627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6507C80-4D41-41F8-AF40-6644A1E99627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6507C80-4D41-41F8-AF40-6644A1E99627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6507C80-4D41-41F8-AF40-6644A1E99627}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

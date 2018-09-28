@@ -25,7 +25,8 @@ namespace eleves_activites
         [TestMethod]
         public void TestReadSucc()
         {
-            Assert
+            ReadFile.ReadCSV();
+            Assert.
         }
     }
 }
