@@ -26,8 +26,6 @@ namespace eleves_activites
             //get all val from the other class
             string valeursCSV = readfile.ReadCSV();
 
-
-
             //affiche sur la Tbox les valeurs
             TxtBTes.Text += valeursCSV;
            

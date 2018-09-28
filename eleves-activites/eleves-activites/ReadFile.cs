@@ -11,7 +11,7 @@ using System.IO;
 
 namespace eleves_activites
 {
-    class ReadFile
+    public class ReadFile
     {
         public string ReadCSV()
         {
@@ -28,7 +28,8 @@ namespace eleves_activites
                     fileName = openFileDialog1.FileName;
                 }
             }
-
+            //verifier les ;
+            //verifier que chaque nom est unique
             if (fileName != null)
             {
                 //Do something with the file, for example read text from it

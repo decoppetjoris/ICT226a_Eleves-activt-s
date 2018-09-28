@@ -44,17 +44,17 @@
             // 
             // TxtBTes
             // 
-            this.TxtBTes.Location = new System.Drawing.Point(274, 31);
+            this.TxtBTes.Location = new System.Drawing.Point(149, 31);
             this.TxtBTes.Multiline = true;
             this.TxtBTes.Name = "TxtBTes";
-            this.TxtBTes.Size = new System.Drawing.Size(376, 382);
+            this.TxtBTes.Size = new System.Drawing.Size(262, 382);
             this.TxtBTes.TabIndex = 1;
             // 
             // EleveActivites
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1171, 450);
             this.Controls.Add(this.TxtBTes);
             this.Controls.Add(this.BtnOpenCSV);
             this.Name = "EleveActivites";
