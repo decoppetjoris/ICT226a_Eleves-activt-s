@@ -18,8 +18,8 @@ namespace eleves_activites
             string fileName = null;
             using (OpenFileDialog openFileDialog1 = new OpenFileDialog())
             {
-                openFileDialog1.InitialDirectory = "c:\\";
-                openFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                openFileDialog1.InitialDirectory = "c:/";
+                openFileDialog1.Filter = "CSV Files(*.csv) | *.csv";
                 openFileDialog1.FilterIndex = 2;
                 openFileDialog1.RestoreDirectory = true;
 
@@ -33,8 +33,8 @@ namespace eleves_activites
             if (fileName != null)
             {
                 //Do something with the file, for example read text from it
-                string texte = File.ReadAllText(fileName);
-                return texte;
+                var texte = File.ReadAllLines(fileName);
+                return fileName;
             }
             else
             {
