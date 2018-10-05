@@ -30,24 +30,45 @@ namespace eleves_activites
 
             //affiche sur la Tbox les valeurs
             TxtBTes.Text += valeursCSV;
+
+            //prendre les donnees du fiches et les mets dans une liste
+            List<Eleve> dataeleve = new List<Eleve>();
             
-            //prendre les donnees du fiches et les mets dans un stack
-            List<int> eleves = new List<int>();
             foreach(var line in File.ReadLines(valeursCSV))
             {
+                List<int> eleves = new List<int>();
                 var values = line.Split(';');
 
                 //mets les activites dans une list
-                int i;
-                for (i = 0; i < 20; i++)
+                int i = 0;
+                foreach(string val in values)
                 {
-                    eleves.Add(Convert.ToInt16(values[i+2]));
+                    
+                    if ((i != 0) && (i != 1))
+                    {
+                        eleves.Add(Convert.ToInt32(val));
+                    }
+                    i++;
                 }
 
                 //les mets dans l'objet eleve
                 Eleve eleve = new Eleve(values[0],Convert.ToBoolean(Convert.ToInt16(values[1])),eleves);
+                dataeleve.Add(eleve);
             }
- 
+
+            //affiche tous les nom des eleves dans le tb
+            
+            foreach (var ele in dataeleve)
+            {
+                TxtBTes.Text +=  ele.NamePublic;
+                TxtBTes.Text += ele.isCaptPublic;
+                int i;
+                for (i = 0; i < ele.listofchoicesPublic.Count; i++)
+                {
+                    TxtBTes.Text += ele.listofchoicesPublic[i];
+                }
+                
+            }
         }
     }
 }
